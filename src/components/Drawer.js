@@ -110,7 +110,7 @@ class Drawer extends React.Component {
             >
               <Home style={{ color: "white" }} />
               <ListItemText
-                primary="Exchanges"
+                primary="Exchange"
                 style={{
                   top: 2,
                   position: "relative",
