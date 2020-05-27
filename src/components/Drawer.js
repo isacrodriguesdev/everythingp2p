@@ -100,6 +100,25 @@ class Drawer extends React.Component {
                 }}
               />
             </ListItem>
+            <ListItem
+              button={true}
+              style={{
+                justifyContent: "center",
+                alignItems: "center",
+                border: "1px solid 0",
+              }}
+            >
+              <Home style={{ color: "white" }} />
+              <ListItemText
+                primary="Exchange"
+                style={{
+                  top: 2,
+                  position: "relative",
+                  marginLeft: 5,
+                  color: "white",
+                }}
+              />
+            </ListItem>
           </List>
         </div>
       </div>
