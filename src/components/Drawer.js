@@ -2,6 +2,11 @@ import React from "react";
 import { List, ListItem, ListItemText, ListItemIcon } from "@material-ui/core";
 import { Fontawesome } from "@fortawesome/react-fontawesome";
 import { SendIcon, Home } from "@material-ui/icons";
+import LiveTvIcon from '@material-ui/icons/LiveTv';
+import AutorenewIcon from '@material-ui/icons/Autorenew';
+import SportsEsportsIcon from '@material-ui/icons/SportsEsports';
+import SettingsApplicationsIcon from '@material-ui/icons/SettingsApplications';
+import CloudIcon from '@material-ui/icons/Cloud';
 
 class Drawer extends React.Component {
   state = {
@@ -69,7 +74,7 @@ class Drawer extends React.Component {
                 border: "1px solid 0",
               }}
             >
-              <Home style={{ color: "white" }} />
+              <SportsEsportsIcon style={{ color: "white" }} />
               <ListItemText
                 primary="Games"
                 style={{
@@ -89,7 +94,47 @@ class Drawer extends React.Component {
                 border: "1px solid 0",
               }}
             >
-              <Home style={{ color: "white" }} />
+              <LiveTvIcon style={{ color: "white" }} />
+              <ListItemText
+                primary="Ad"
+                style={{
+                  top: 2,
+                  position: "relative",
+                  marginLeft: 5,
+                  color: "white",
+                }}
+              />
+            </ListItem>
+            <ListItem
+              button={true}
+              style={{
+                justifyContent: "center",
+                alignItems: "center",
+                border: "1px solid 0",
+              }}
+            >
+              <AutorenewIcon style={{ color: "white" }} />
+              <ListItemText
+                primary="Exchange"
+                style={{
+                  top: 2,
+                  position: "relative",
+                  marginLeft: 5,
+                  color: "white",
+                }}
+              />
+              
+            </ListItem>
+
+            <ListItem
+              button={true}
+              style={{
+                justifyContent: "center",
+                alignItems: "center",
+                border: "1px solid 0",
+              }}
+            >
+              <SettingsApplicationsIcon style={{ color: "white" }} />
               <ListItemText
                 primary="Serviços"
                 style={{
@@ -110,7 +155,27 @@ class Drawer extends React.Component {
             >
               <Home style={{ color: "white" }} />
               <ListItemText
-                primary="Exchange"
+                primary="Torrent"
+                style={{
+                  top: 2,
+                  position: "relative",
+                  marginLeft: 5,
+                  color: "white",
+                }}
+              />
+            </ListItem>
+
+            <ListItem
+              button={true}
+              style={{
+                justifyContent: "center",
+                alignItems: "center",
+                border: "1px solid 0",
+              }}
+            >
+              <CloudIcon style={{ color: "white" }} />
+              <ListItemText
+                primary="Host"
                 style={{
                   top: 2,
                   position: "relative",
